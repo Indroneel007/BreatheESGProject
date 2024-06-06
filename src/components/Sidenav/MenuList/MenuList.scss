@@ -1,0 +1,17 @@
+.custom-menu-item {
+    color: red !important; 
+  }
+  
+  .custom-menu-item .ant-menu-title-content {
+    color: inherit;
+  }
+
+.menu-bar {
+    height: 100vh;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-size: 1rem;
+    position: relative;
+}  

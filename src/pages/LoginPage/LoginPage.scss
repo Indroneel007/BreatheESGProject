@@ -1,0 +1,103 @@
+.container{
+    display: flex;
+    height: 100vh;
+}
+.left{
+    background-color: rgba(33, 69, 60, 1);
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+}
+.box{
+    width: 440px;
+    height: 294px;
+}
+.Breatheimage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.imagelogo {
+    height: 25%;
+    display: flex;
+    position: relative;
+}
+.earthlogo{
+    position: absolute; /* Position the image absolutely */
+    bottom: 0; /* Align the image to the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    width:110px;
+    height: auto;
+}
+.loginform{
+    height:75%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.loginformdesign{
+    height: 450px;
+    width: 350px;
+    display: flex;
+    background-color: rgba(35, 94, 74, 1);
+    padding: 20px;
+    border-radius: 5px;
+}
+.loginform h3 {
+    text-align: left;
+    font-size: 25px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.p1 {
+    text-align: left;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 10px;
+}
+.loginform label {
+    font-weight: 100;
+    color: white;
+    text-align: left;
+    display: block; /* Display labels as block elements */
+    margin-bottom: 10px;
+}
+.loginform input[type="email"],
+.loginform input[type="password"] {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 15px; /* Add some space below each input */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.p2 {
+    text-align: left;
+    font-size: 12px;
+    color: white;
+}
+
+.btn1{
+    width: 320px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    //background-color: #0f8a13;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+
+.btn1{
+    background-color: #30ac1a;
+  }

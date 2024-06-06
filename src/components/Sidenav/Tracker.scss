@@ -1,0 +1,137 @@
+.sidebar{
+    z-index: 10;
+}
+.header {
+    padding: 0;
+    background-color: white;
+    display: flex;
+}
+.header-left {
+    flex: 1; /* Smallest part */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white; /* Different background color for visualization */
+  }
+  
+  .header-middle {
+    flex: 3; /* Largest part */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white; /* Different background color for visualization */
+  }
+  
+  .header-right {
+    flex: 2; /* Medium part */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white; /* Different background color for visualization */
+  }
+
+  .bell{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+  .name{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+  .man{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background-color: white;
+}
+.top{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.between{
+  flex:1.5;
+  display: flex;
+  align-items: center;
+    justify-content: left;
+}
+.between img{
+  margin-left: 15px;
+  margin-right: 10px;
+}
+.content p {
+  color: gray;
+  font-size: small;
+  text-align: right;
+}
+.bottom {
+  flex: 4.5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  width: 100%; /* Ensure the bottom div covers the full width */
+  padding: 20px; /* Optional: Add some padding for better spacing */
+}
+
+.top div{
+    flex: 1; /* Smallest part */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.anchor-image{
+    width: 100px;
+    height: 50px;
+}
+.button1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+}
+.button1 div{
+    flex: 1;
+    align-items: center;
+    justify-content: right;
+    color: gray;
+    font-size: 15px;
+    font-weight:bolder;
+    background-color: white;    
+}
+.dropdown{
+    margin-left: 0;
+}
+.btn-container {
+  margin-bottom: 20px; /* Add some space between the button and the table */
+  width: 100%; /* Ensure the button container takes the full width */
+  display: flex;
+  justify-content: left;
+}
+
+.btn-btn {
+  width: 350px;
+  color: gray;
+  font-weight: 400;
+  margin-left: 50px;
+  margin-left: 10;
+  justify-content: left; /* Align the button to the left */
+}
+
+.tablediv {
+  width: 100%; /* Ensure the table takes the full width */
+}
