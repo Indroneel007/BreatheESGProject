@@ -1,8 +1,6 @@
-import React, {useState} from 'react'
-import {Button, Layout, theme, Anchor, Menu, Dropdown, Table, Divider} from 'antd'
-import {Link} from 'react-router-dom'
+import React from 'react'
+import {Button, Layout, Anchor, Dropdown, Table} from 'antd'
 import {BellOutlined} from '@ant-design/icons'
-import {MenuUnfoldOutlined, MenuFoldOutlined} from '@ant-design/icons'
 import './Sidenav.scss'
 import Logo from './Logo/Logo';
 import MenuList from './MenuList/MenuList';
