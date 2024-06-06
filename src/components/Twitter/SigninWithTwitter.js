@@ -26,7 +26,7 @@ function SignInWithTwitter() {
   }
   return (
       <button onClick={googleLogin} className="button-with-image">
-        <img src={Twitter} className="button-image" />
+        <img src={Twitter} alt="twitter" className="button-image" />
         <span className="button-text">Sign In with Google</span>
       </button>
   );

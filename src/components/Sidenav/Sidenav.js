@@ -20,7 +20,7 @@ import Complete from '../../images/Complete.svg'
 
 const columns = [
   {
-    title: <img src={Checkbox} />,
+    title: <img src={Checkbox} alt="checkbox" />,
     dataIndex:'checkbox'
   },
   {
@@ -60,63 +60,63 @@ const columns = [
 const data = [
   {
     key: '1',
-    Checkbox: <img src={Checkbox} />,
+    Checkbox: <img src={Checkbox} alt="checkbox2" />,
     assessmenttitle: 'Assessment 1',
     type: 'BRSR',
     suppliers: '20',
     score:'-',
-    riskclassification:<img src={Medium} />,
-    status: <img src={Pending} />,
+    riskclassification:<img src={Medium} alt="medium2" />,
+    status: <img src={Pending} alt="pending2" />,
     result: '-',
-    actions: <img src={Actions} />
+    actions: <img src={Actions} alt="actions2" />
   },
   {
     key: '2',
-    Checkbox: <img src={Checkbox} />,
+    Checkbox: <img src={Checkbox} alt="checkbox3" />,
     assessmenttitle: 'Assessment 2',
     type: 'BRSR',
     suppliers: '25',
     score:'98',
-    riskclassification:<img src={Low} />,
-    status: <img src={Complete} />,
+    riskclassification:<img src={Low} alt="low3" />,
+    status: <img src={Complete} alt="complete3" />,
     result: 'View',
-    actions: <img src={Actions} />
+    actions: <img src={Actions} alt="actions3" />
   },
   {
     key: '3',
-    Checkbox: <img src={Checkbox} />,
+    Checkbox: <img src={Checkbox} alt="checkbox4" />,
     assessmenttitle: 'Assessment 3',
     type: 'BRSR',
     suppliers: '35',
     score:'22',
-    riskclassification:<img src={High} />,
-    status: <img src={Complete} />,
+    riskclassification:<img src={High} alt="high4" />,
+    status: <img src={Complete} alt="complete4" />,
     result: 'View',
-    actions: <img src={Actions} />
+    actions: <img src={Actions} alt="actions4" />
   },
   {
     key: '4',
-    Checkbox: <img src={Checkbox} />,
+    Checkbox: <img src={Checkbox} alt="checkbox5" />,
     assessmenttitle: 'Assessment 3',
     type: 'Custom',
     suppliers: '49',
     score:'23',
-    riskclassification:<img src={Medium} />,
-    status: <img src={Complete} />,
+    riskclassification:<img src={Medium} alt="medium5" />,
+    status: <img src={Complete} alt="complete5"/>,
     result: 'View',
-    actions: <img src={Actions} />
+    actions: <img src={Actions} alt="actions5"/>
   },
   {
     key: '5',
-    Checkbox: <img src={Checkbox} />,
+    Checkbox: <img src={Checkbox} alt="checkbox6" />,
     assessmenttitle: 'Assessment 3',
     type: 'Custom',
     suppliers: '100',
     score:'42',
-    riskclassification:<img src={Medium} />,
-    status: <img src={Complete} />,
+    riskclassification:<img src={Medium} alt="medium" />,
+    status: <img src={Complete} alt="complete6" />,
     result: 'View',
-    actions: <img src={Actions} />
+    actions: <img src={Actions} alt="actions" />
   }
 ]
 
@@ -132,14 +132,14 @@ const Sidenav = () => {
         <Layout>
         <Header className="header">
         <div className="header-left">
-          <img src={Slicer} />
+          <img src={Slicer} alt="slicer" />
         </div>
         <div className="header-middle"></div>
         <div className="header-right">
           <div className='bell'><BellOutlined /></div>
           <div className='name'>John Doe</div>
           <div className='man'>
-            <img src={Avatar} />
+            <img src={Avatar} alt="avatar" />
           </div>
         </div>
         </Header>
@@ -152,12 +152,12 @@ const Sidenav = () => {
           {
             key: 'part-1',
             href: '/',
-            title: <img src={DataEntry} className="anchor-image"/> ,
+            title: <img src={DataEntry} alt="dataentry" className="anchor-image"/> ,
           },
           {
             key: 'part-2',
             href: '/tracker',
-            title: <img src={Tracker} className="anchor-image"/> ,
+            title: <img src={Tracker} alt="tracker" className="anchor-image"/> ,
           },
         ]}
       />

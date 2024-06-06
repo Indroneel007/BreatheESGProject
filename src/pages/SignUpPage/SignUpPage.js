@@ -47,12 +47,12 @@ const SignUpPage = () => {
     <div className="container">
   <div className="left">
     <div className="box">
-        <img src={Breathe} className="Breatheimage" />
+        <img src={Breathe} alt="breathe" className="Breatheimage" />
     </div>
   </div>
   <div className="right">
     <div className="imagelogo">
-      <img src={earthlogo} className="earthlogo" />
+      <img src={earthlogo} alt="earthlogo" className="earthlogo" />
     </div>
     <div className="signupform">
     <div className="Formdesign">

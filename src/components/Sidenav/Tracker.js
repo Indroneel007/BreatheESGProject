@@ -37,19 +37,19 @@ const columns = [
 const data = [
   {
     month:'Jan 2023',
-    status:<img src={PendingApproval} />,
+    status:<img src={PendingApproval} alt="pendingapproval" />,
     completion:'20%',
     business:'Business Unit 1'
   },
   {
     month:'Feb 2023',
-    status:<img src={ApprovedTwo} />,
+    status:<img src={ApprovedTwo} alt="approvedtwo"/>,
     completion:'30%',
     business:'Business Unit 1'
   },
   {
     month:'Mar 2023',
-    status:<img src={Incomplete} />,
+    status:<img src={Incomplete} alt="incomplete" />,
     completion:'50%',
     business:'Business Unit 1'
   }
@@ -67,14 +67,14 @@ const TrackerPage = () => {
         <Layout>
         <Header className="header">
         <div className="header-left">
-          <img src={Slicer} />
+          <img src={Slicer} alt="slicer"/>
         </div>
         <div className="header-middle"></div>
         <div className="header-right">
           <div className='bell'><BellOutlined /></div>
           <div className='name'>John Doe</div>
           <div className='man'>
-            <img src={Avatar} />
+            <img src={Avatar} alt="avatar" />
           </div>
         </div>
         </Header>
@@ -87,12 +87,12 @@ const TrackerPage = () => {
           {
             key: 'part-1',
             href: '/data',
-            title: <img src={DataEntry} className="anchor-image"/> ,
+            title: <img src={DataEntry} alt="dataentry" className="anchor-image"/> ,
           },
           {
             key: 'part-2',
             href: '/tracker',
-            title: <img src={Tracker} className="anchor-image"/> ,
+            title: <img src={Tracker} alt="tracker" className="anchor-image"/> ,
           },
         ]}
       />
@@ -109,8 +109,8 @@ const TrackerPage = () => {
           </div>
           </div>
           <div className="between">
-            <img src={PendingTracker} />
-            <img src={PendingReviews} />
+            <img src={PendingTracker} alt="pendingtracker" />
+            <img src={PendingReviews} alt="pendingreviews" />
           </div>
           <p>Autosaved at 12:31 pm</p>
           <div className="bottom">
@@ -120,7 +120,7 @@ const TrackerPage = () => {
         </Button>
       </div>
       <div className="tablediv">
-        <Table columns={columns} dataSource={data} />
+        <Table columns={columns} dataSource={data} pagination={false}/>
       </div>
     </div>
         </Content>
