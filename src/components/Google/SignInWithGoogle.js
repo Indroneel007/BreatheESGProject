@@ -1,14 +1,11 @@
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import { useState } from "react";
 import { auth, db } from "../firebase";
 import { toast } from "react-toastify";
 import { setDoc, doc } from "firebase/firestore";
 import Google from "../../images/google.svg"
 import './SignInWithGoogle.scss'
-import Sidenav from "../Sidenav/Sidenav";
 
 function SignInWithGoogle() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   function googleLogin() {
     const provider = new GoogleAuthProvider();

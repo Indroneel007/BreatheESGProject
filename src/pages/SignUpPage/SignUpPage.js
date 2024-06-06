@@ -7,14 +7,12 @@ import { setDoc, doc } from "firebase/firestore";
 import { toast } from "react-toastify";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from 'react-router-dom';
-import Sidenav from '../../components/Sidenav/Sidenav'
 
 const SignUpPage = () => {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setconfirmPassword] = useState("")
-  const [isLoggedIn, setisLoggedIn] = useState(false);
   const navigate = useNavigate();
 
   const handleRegister = async (e) => {
