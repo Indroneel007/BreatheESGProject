@@ -1,12 +1,9 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import { useEffect, useState } from "react";
 import SignUpPage from './pages/SignUpPage/SignUpPage';
-import styled from 'styled-components';
 import LoginPage from './pages/LoginPage/LoginPage';
 import Sidenav from './components/Sidenav/Sidenav';
 import TrackerPage from './components/Sidenav/Tracker';
-import { auth } from "./components/firebase";
 
 function App() {
   return (

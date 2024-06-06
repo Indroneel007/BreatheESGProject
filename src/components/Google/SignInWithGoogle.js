@@ -1,11 +1,13 @@
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth, db } from "../firebase";
+import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { setDoc, doc } from "firebase/firestore";
 import Google from "../../images/google.svg"
 import './SignInWithGoogle.scss'
 
 function SignInWithGoogle() {
+  const navigate = useNavigate();
 
   function googleLogin() {
     const provider = new GoogleAuthProvider();
@@ -19,7 +21,7 @@ function SignInWithGoogle() {
         toast.success("User logged in Successfully", {
           position: "top-center",
         });
-        window.location.href = "/data";
+        navigate('/data');
       }
     });
   }

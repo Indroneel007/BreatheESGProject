@@ -8,7 +8,6 @@ import earthlogo from '../../images/earthlogo.png'
 import SignInWithGoogle from "../../components/Google/SignInWithGoogle";
 import SignInWithTwitter from "../../components/Twitter/SigninWithTwitter";
 import { Link, useNavigate } from 'react-router-dom';
-import Sidenav from "../../components/Sidenav/Sidenav";
 
 const LoginPage = () => {
 
@@ -22,7 +21,7 @@ const LoginPage = () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       console.log("User logged in Successfully");
-      window.location.href = "/data";
+      navigate('/data');
       toast.success("User logged in Successfully", {
         position: "top-center",
       });

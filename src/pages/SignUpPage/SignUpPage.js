@@ -27,7 +27,7 @@ const SignUpPage = () => {
         });
       }
       console.log("User Registered Successfully!!");
-      window.location.href = "/data";
+      navigate('/data');
       toast.success("User Registered Successfully!!", {
         position: "top-center",
       });

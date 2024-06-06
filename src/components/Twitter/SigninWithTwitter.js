@@ -4,8 +4,10 @@ import { toast } from "react-toastify";
 import { setDoc, doc } from "firebase/firestore";
 import Twitter from "../../images/twitter.svg"
 import './SigninWithTwitter.scss'
+import { useNavigate } from "react-router-dom";
 
 function SignInWithTwitter() {
+  const navigate = useNavigate();
   function googleLogin() {
     const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider).then(async (result) => {
@@ -18,7 +20,7 @@ function SignInWithTwitter() {
         toast.success("User logged in Successfully", {
           position: "top-center",
         });
-        //window.location.href = "/profile";
+        navigate('/data');
       }
     });
   }
